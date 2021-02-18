@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+}
+
+.content {
+  margin-top: var(--topbar-height);
+  padding: 0 1.5rem 1rem 1.5rem;
+  width: 100%;
+}

@@ -1,0 +1,52 @@
+.topbar {
+  height: var(--topbar-height);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding: var(--topbar-padding);
+  z-index: 1;
+  background-color: var(--bg-color);
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.shadow {
+  box-shadow: 0 0 10px var(--shadow4);
+}
+.filter {
+  border: var(--border);
+  border-radius: var(--element-radius);
+  display: flex;
+  flex: 1;
+}
+
+.searchBox {
+  flex: 1;
+  display: flex;
+}
+input {
+  background-color: transparent;
+  border-radius: var(--element-radius);
+  margin-left: 2rem;
+  width: 90%;
+  border: none;
+  font-size: 1rem;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+::placeholder {
+  opacity: 0.7;
+}
+
+.buttonSearch {
+  width: 10%;
+  min-width: fit-content;
+}

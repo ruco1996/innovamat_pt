@@ -1,0 +1,38 @@
+.container {
+  position: fixed;
+  width: var(--sidebar-width);
+  height: calc(100% - var(--topbar-height));
+  border-right: var(--border);
+  padding: 1rem 1.1rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar {
+  margin-top: var(--topbar-height);
+  min-width: var(--sidebar-width);
+}
+.title {
+  font-weight: 400;
+  color: var(--dark-primary);
+  border-bottom: var(--border);
+  margin-bottom: 1rem;
+}
+.listItem {
+  padding: 0.5rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.listItem:hover {
+  color: var(--color-primary);
+}
+
+.selected {
+  color: var(--color-primary);
+}
+
+.colorSwitch {
+  margin-bottom: 1rem;
+}

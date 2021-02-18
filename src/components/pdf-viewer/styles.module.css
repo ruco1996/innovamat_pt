@@ -1,0 +1,19 @@
+.document {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+canvas {
+  border: var(--border);
+  border-radius: var(--element-radius);
+}
+
+.pagination {
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+}

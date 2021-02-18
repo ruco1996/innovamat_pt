@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 0.6rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--color-text);
+  transition: all 0.3s;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.button > span {
+  margin-right: 1rem;
+}
+
+.fav {
+  color: var(--color-primary);
+}

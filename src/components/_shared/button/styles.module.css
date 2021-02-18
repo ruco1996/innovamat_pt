@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.8rem;
+  border: none;
+  border-radius: var(--element-radius);
+  padding: 0.3rem 0.7rem;
+  justify-content: center;
+  background-color: var(--color-default);
+}
+.button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button:active {
+  opacity: 1;
+}

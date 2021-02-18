@@ -1,0 +1,39 @@
+.filter {
+  border-right: var(--border);
+  width: calc(var(--sidebar-width) - var(--topbar-padding));
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  color: var(--color-light-gray);
+  height: 100%;
+}
+
+.filter:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.filter svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_content {
+  display: none;
+  background-color: var(--bg-color);
+  box-shadow: 0px 8px 16px 0px var(--shadow1);
+  border: var(--border);
+  z-index: 2;
+  padding: 1rem;
+  width: calc(var(--sidebar-width) - var(--topbar-padding));
+}
+
+.display {
+  display: block;
+}
