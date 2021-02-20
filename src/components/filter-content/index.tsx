@@ -12,8 +12,6 @@ function FilterContent() {
     dispatch({ type: 'SET_FILTER', payload: filter })
   }
 
-  console.log(filters)
-
   return (
     <>
       {filterSchema.map(filter => (

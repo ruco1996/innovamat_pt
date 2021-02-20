@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import { useHistory } from 'react-router-dom'
 import useEventListener from '../../../hooks/useEventListener'
+import { useIsMobile } from '../../../hooks/useMediaQuery'
 import useQuery from '../../../hooks/useQuery'
 import FilterDropdown from '../../filter-dropdown'
 import Button from '../../_shared/button'
@@ -12,6 +13,7 @@ export default function TopBar() {
   const [scrollOnTop, setScrollOnTop] = useState(true)
   const [keyword, setKeyword] = useState(key || '')
   const history = useHistory()
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     setKeyword(key || '')
@@ -30,6 +32,11 @@ export default function TopBar() {
     e.preventDefault()
     history.push(`/search?keyword=${keyword}`)
   }
+
+  // TODO
+  // if (isMobile) {
+  //   return <nav></nav>
+  // }
 
   return (
     <nav className={`${styles.topbar} ${!scrollOnTop ? styles.shadow : ''}`}>
