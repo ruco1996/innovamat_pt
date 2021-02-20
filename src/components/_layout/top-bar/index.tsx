@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { BsFilterLeft } from 'react-icons/bs'
 import { FaSearch } from 'react-icons/fa'
 import { useHistory } from 'react-router-dom'
 import useEventListener from '../../../hooks/useEventListener'
@@ -33,10 +34,22 @@ export default function TopBar() {
     history.push(`/search?keyword=${keyword}`)
   }
 
-  // TODO
-  // if (isMobile) {
-  //   return <nav></nav>
-  // }
+  if (isMobile) {
+    return (
+      <nav className={styles.topbar_mobile}>
+        <div className={styles.searchBox}>
+          <input
+            placeholder="Introduce un texto"
+            type="text"
+            value={keyword}
+            onChange={handleChange}
+          />
+          <FaSearch className={styles.searchIcon} />
+          <BsFilterLeft className={styles.filterIcon} />
+        </div>
+      </nav>
+    )
+  }
 
   return (
     <nav className={`${styles.topbar} ${!scrollOnTop ? styles.shadow : ''}`}>

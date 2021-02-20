@@ -8,6 +8,37 @@
   background-color: var(--bg-color);
 }
 
+.topbar_mobile {
+  background-color: rgb(226 226 226);
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+}
+
+.topbar_mobile > .searchBox {
+  background-color: #fff;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-primary);
+}
+
+.filterIcon {
+  color: var(--color-text);
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
 .form {
   width: 100%;
   display: flex;
@@ -17,6 +48,7 @@
 .shadow {
   box-shadow: 0 0 10px var(--shadow4);
 }
+
 .filter {
   border: var(--border);
   border-radius: var(--element-radius);
@@ -28,7 +60,9 @@
   flex: 1;
   display: flex;
 }
+
 input {
+  height: 100%;
   background-color: transparent;
   border-radius: var(--element-radius);
   margin-left: 2rem;
@@ -36,6 +70,7 @@ input {
   border: none;
   font-size: 1rem;
 }
+
 input:focus,
 textarea:focus,
 select:focus {
